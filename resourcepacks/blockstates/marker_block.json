@@ -1,0 +1,9 @@
+{
+    "variants":
+	{
+        "normal": 
+		{ 
+			"model": "wacky_race:marker_block"
+		}
+    }
+}

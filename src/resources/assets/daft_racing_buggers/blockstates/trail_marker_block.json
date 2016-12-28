@@ -1,0 +1,9 @@
+{
+    "variants":
+	{
+        "normal": 
+		{ 
+			"model": "daft_racing_buggers:trail_marker_block"
+		}
+    }
+}
