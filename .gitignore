@@ -1,31 +1,36 @@
 
 # eclipse
-bin
-*.log
-*.launch
-.settings
-.metadata
-.classpath
-.project
 # idea
-out
+# gradle
+# Minecraft
+# other
+
 *.ipr
 *.iws
 *.iml
-.idea
-# gradle
-build
+*.log
+*.launch
+
+.classpath
 .gradle
-# other
+.idea
+.metadata
+.project
+.settings
+
+bin
+build
 eclipse
+minecraft
+out
 run
-saves/
-config/
+
+eula.txt
 options.txt
 usercache.json
 usernamecache.json
-logs/
+
+config/
 crash-reports/
-*.launch
-# Minecraft
-minecraft
+logs/
+saves/
