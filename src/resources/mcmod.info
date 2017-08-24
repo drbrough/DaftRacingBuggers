@@ -1,0 +1,23 @@
+[
+	{
+		"modid": "daft_racing_buggers",
+		"name": "Daft Racing Buggers",
+		"description": "Adds a little race to the game.",
+		"version": "",
+		"credits": "Created by Darkvoid_Bluff",
+		"logoFile": "",
+		"mcversion": "",
+		"url": "https://github.com/drbrough/DaftRacingBuggers",
+		"updateUrl": "",
+		"authors":
+		[ 
+			"Darkvoid_Bluff"
+		],
+		"parent":"",
+		"screenshots": [],
+		"dependencies":
+		[
+			"mod_MinecraftForge"
+		]
+	}
+]
