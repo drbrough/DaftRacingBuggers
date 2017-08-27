@@ -44,7 +44,6 @@ public class DaftRacingBuggersWorldGen
 			
 		rand = new Random();
 	      
-		System.out.println("ping");
 		originX = sp.getWorld().getWorldInfo().getSpawnX() + rand.nextInt(3) - rand.nextInt(3);
         originZ = sp.getWorld().getWorldInfo().getSpawnZ() + rand.nextInt(3) - rand.nextInt(3);
         originPos = sp.getWorld().getTopSolidOrLiquidBlock(new BlockPos(originX, 0, originZ)).up();

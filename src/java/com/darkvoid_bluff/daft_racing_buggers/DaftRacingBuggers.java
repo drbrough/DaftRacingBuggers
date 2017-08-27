@@ -98,16 +98,19 @@ public class DaftRacingBuggers
     
     public static void syncConfig()
     {
-    	config.addCustomCategoryComment("Race Conditions", "Setting the race conditions");
+    	config.load();
+    	
+    	config.addCustomCategoryComment(Configuration.CATEGORY_GENERAL, "Setting the race conditions");
     	
 //        configFinishAsATeam = configFile.get("finish as a team", "race conditions", configFinishAsATeam, "A Boolean!");
-    	configFinishAsATeam = config.getBoolean("Finish As A Team", "race conditions", configFinishAsATeam, "Finish As A Team: true or false");
-    	configNumberOfRaceMarkers = config.getInt("Number Of Race Markers", "race conditions", configNumberOfRaceMarkers, 0, Integer.MAX_VALUE, "Number Of Race Markers: a positive integer");
+    	configFinishAsATeam = config.getBoolean("Finish As A Team", Configuration.CATEGORY_GENERAL, configFinishAsATeam, "Finish As A Team: true or false");
+    	configNumberOfRaceMarkers = config.getInt("Number Of Race Markers", Configuration.CATEGORY_GENERAL, configNumberOfRaceMarkers, 0, Integer.MAX_VALUE, "Number Of Race Markers: a positive integer");
 //        myConfigString = configFile.getString("My Config String", Configuration.CATEGORY_GENERAL, myConfigString, "A String!");
 
-        if(config.hasChanged())
-        {    	
-          config.save();
-        }
-     }
+    	
+		if(config.hasChanged())
+		{    	
+		  config.save();
+		}
+    }
 }
